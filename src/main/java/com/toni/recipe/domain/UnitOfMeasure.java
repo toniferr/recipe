@@ -3,12 +3,12 @@ package com.toni.recipe.domain;
 import javax.persistence.*;
 
 @Entity
-public class UnitOfMesure {
+public class UnitOfMeasure {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String uom;
+    private String description;
 
     @OneToOne
     private Ingredient ingredient;
@@ -21,12 +21,12 @@ public class UnitOfMesure {
         this.id = id;
     }
 
-    public String getUom() {
-        return uom;
+    public String getDescription() {
+        return description;
     }
 
-    public void setUom(String uom) {
-        this.uom = uom;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public Ingredient getIngredient() {

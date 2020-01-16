@@ -1,0 +1,11 @@
+com/toni/recipe/repositories/UnitOfMeasureRepository.class
+com/toni/recipe/RecipeApplication.class
+com/toni/recipe/domain/Recipe.class
+com/toni/recipe/domain/Category.class
+com/toni/recipe/domain/Notes.class
+com/toni/recipe/domain/UnitOfMeasure.class
+com/toni/recipe/domain/Difficulty.class
+com/toni/recipe/controllers/IndexController.class
+com/toni/recipe/domain/Ingredient.class
+com/toni/recipe/repositories/RecipeRepository.class
+com/toni/recipe/repositories/CategoryRepository.class
