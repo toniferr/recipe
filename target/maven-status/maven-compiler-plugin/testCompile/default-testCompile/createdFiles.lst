@@ -1,3 +1,5 @@
+com/toni/recipe/controllers/IndexControllerTest.class
+com/toni/recipe/repositories/UnitOfMeasureRepositoryTestIT.class
 com/toni/recipe/domain/CategoryTest.class
 com/toni/recipe/RecipeApplicationTests.class
 com/toni/recipe/services/RecipeServiceImplTest.class
