@@ -1,2 +1,3 @@
 com/toni/recipe/domain/CategoryTest.class
 com/toni/recipe/RecipeApplicationTests.class
+com/toni/recipe/services/RecipeServiceImplTest.class
