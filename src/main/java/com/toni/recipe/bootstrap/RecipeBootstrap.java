@@ -33,11 +33,10 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
     @Transactional
     public void onApplicationEvent(ContextRefreshedEvent event) {
         recipeRepository.save(getRecipes());
+        log.debug("Loading Bootstrap Data");
     }
 
     private List<Recipe> getRecipes() {
-
-        log.debug("Init RecipeBootstrap.getRecipes...");
 
         List<Recipe> recipes = new ArrayList<>(2);
 

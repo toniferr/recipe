@@ -7,6 +7,7 @@
 /home/toni/eclipse-workspace/recipe/src/main/java/com/toni/recipe/bootstrap/RecipeBootstrap.java
 /home/toni/eclipse-workspace/recipe/src/main/java/com/toni/recipe/services/RecipeServiceImpl.java
 /home/toni/eclipse-workspace/recipe/src/main/java/com/toni/recipe/domain/Difficulty.java
+/home/toni/eclipse-workspace/recipe/src/main/java/com/toni/recipe/controllers/RecipeController.java
 /home/toni/eclipse-workspace/recipe/src/main/java/com/toni/recipe/repositories/RecipeRepository.java
 /home/toni/eclipse-workspace/recipe/src/main/java/com/toni/recipe/RecipeApplication.java
 /home/toni/eclipse-workspace/recipe/src/main/java/com/toni/recipe/services/RecipeService.java

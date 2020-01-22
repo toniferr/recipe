@@ -1,4 +1,5 @@
 /home/toni/eclipse-workspace/recipe/src/test/java/com/toni/recipe/services/RecipeServiceImplTest.java
+/home/toni/eclipse-workspace/recipe/src/test/java/com/toni/recipe/controllers/RecipeControllerTest.java
 /home/toni/eclipse-workspace/recipe/src/test/java/com/toni/recipe/controllers/IndexControllerTest.java
 /home/toni/eclipse-workspace/recipe/src/test/java/com/toni/recipe/repositories/UnitOfMeasureRepositoryTestIT.java
 /home/toni/eclipse-workspace/recipe/src/test/java/com/toni/recipe/RecipeApplicationTests.java

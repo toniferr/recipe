@@ -3,6 +3,7 @@ com/toni/recipe/bootstrap/RecipeBootstrap.class
 com/toni/recipe/services/RecipeService.class
 com/toni/recipe/RecipeApplication.class
 com/toni/recipe/domain/Recipe.class
+com/toni/recipe/controllers/RecipeController.class
 com/toni/recipe/domain/Category.class
 com/toni/recipe/domain/Notes.class
 com/toni/recipe/domain/UnitOfMeasure.class
