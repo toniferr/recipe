@@ -110,9 +110,6 @@ public class IngredientServiceImpl implements IngredientService {
 
     }
 
-    /*public void deleteById(Long id){
-        recipeRepository.deleteById(id);
-    }*/
     @Override
     public void deleteById(Long recipeId, Long idToDelete) {
 
