@@ -2,6 +2,7 @@ package com.toni.recipe.controllers;
 
 import com.toni.recipe.commands.RecipeCommand;
 import com.toni.recipe.domain.Recipe;
+import com.toni.recipe.exceptions.NotFoundException;
 import com.toni.recipe.services.RecipeService;
 import org.junit.Before;
 import org.junit.Test;
@@ -96,5 +97,23 @@ public class RecipeControllerTest {
 
         verify(recipeService, times(1)).deleteById(anyLong());
 
+    }
+    @Test
+    public void testGetRecipeNotFound() throws Exception {
+
+        when(recipeService.findById(anyLong())).thenThrow(NotFoundException.class);
+
+        mockMvc.perform(get("/recipe/show/1"))
+                .andExpect(status().isNotFound())
+                .andExpect(view().name("404error"));
+    }
+
+
+    @Test
+    public void testGetRecipeNumberFormatException() throws Exception {
+
+        mockMvc.perform(get("/recipe/show/asdf"))
+                .andExpect(status().isBadRequest())
+                .andExpect(view().name("400error"));
     }
 }

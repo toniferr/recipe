@@ -4,6 +4,7 @@ import com.toni.recipe.commands.RecipeCommand;
 import com.toni.recipe.converters.RecipeCommandToRecipe;
 import com.toni.recipe.converters.RecipeToRecipeCommand;
 import com.toni.recipe.domain.Recipe;
+import com.toni.recipe.exceptions.NotFoundException;
 import com.toni.recipe.repositories.RecipeRepository;
 import org.junit.Before;
 import org.junit.Test;
@@ -102,5 +103,17 @@ public class RecipeServiceImplTest {
 
         //then
         verify(recipeRepository, times(1)).deleteById(anyLong());
+    }
+
+    @Test(expected = NotFoundException.class)
+    public void getRecipeByIdTestNotFound() throws Exception {
+
+        Optional<Recipe> recipeOptional = Optional.empty();
+
+        when(recipeRepository.findById(anyLong())).thenReturn(recipeOptional);
+
+        Recipe recipeReturned = recipeService.findById(1L);
+
+        //should go boom
     }
 }
